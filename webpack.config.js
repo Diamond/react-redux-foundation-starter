@@ -1,5 +1,3 @@
-var path = require("path");
-console.log(__dirname);
 module.exports = {
   entry: {
     app: './src/app.jsx'
@@ -19,7 +17,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders: ["style", "css", "sass?includePaths[]=./node_modules/foundation-apps/scss/"]
+        loaders: ["style", "css", "sass?includePaths[]=./node_modules/foundation-sites/scss/"]
       }
     ]
   }
