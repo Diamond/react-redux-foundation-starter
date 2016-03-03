@@ -65,7 +65,7 @@
 	    _react2.default.createElement(
 	      "h1",
 	      null,
-	      "Teladoc Member Site"
+	      "Foundation React Component"
 	    ),
 	    _react2.default.createElement(
 	      "button",
