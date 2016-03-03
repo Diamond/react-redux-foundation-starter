@@ -1,4 +1,11 @@
+var webpack = require('webpack');
 module.exports = {
+  plugins: [
+    new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery"
+    })
+  ],
   entry: {
     app: './src/app.jsx'
   },
@@ -6,6 +13,9 @@ module.exports = {
     filename: 'public/[name].js'
   },
   module: {
+    noParse: [
+      /[\/\\]node_modules[\/\\]jquery[\/\\]dist[\/\\]jquery\.min\.js$/
+    ],
     loaders: [
       {
         test: /\.jsx?$/,
