@@ -1,6 +1,8 @@
+var path = require("path");
+console.log(__dirname);
 module.exports = {
   entry: {
-    app: './src/App.jsx'
+    app: './src/app.jsx'
   },
   output: {
     filename: 'public/[name].js'
@@ -14,6 +16,10 @@ module.exports = {
         query: {
           presets: ['react', 'es2015']
         }
+      },
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass?includePaths[]=./node_modules/foundation-apps/scss/"]
       }
     ]
   }
