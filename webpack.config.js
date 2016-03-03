@@ -7,7 +7,6 @@ module.exports = {
   output: {
     filename: 'public/[name].js'
   },
-  devtool: "source-map",
   module: {
     loaders: [
       {
@@ -20,11 +19,8 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders: ["style", "css?sourceMap", "sass?sourceMap"]
+        loaders: ["style?includePaths[]=./node_modules/foundation-apps/scss/", "css?includePaths[]=./node_modules/foundation-apps/scss/", "sass?includePaths[]=./node_modules/foundation-apps/scss/"]
       }
-    ],
-    sassLoader: {
-      includePaths: [path.resolve(__dirname, "../node_modules/foundation-sites/scss/")]
-    }
+    ]
   }
 };

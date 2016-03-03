@@ -7,7 +7,7 @@ const App = (props) => {
   return (
     <div>
       <h1>Teladoc Member Site</h1>
-      <button class="button">Do a thing</button>
+      <button className="button">Do a thing</button>
     </div>
   )
 }
