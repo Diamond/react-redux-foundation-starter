@@ -1,7 +1,7 @@
 {
-  "name": "member-test",
+  "name": "react-redux-foundation-starter",
   "version": "0.0.1",
-  "description": "An example React/Redux SPA for Member Site",
+  "description": "A simple React/Redux/Foundation Starter Kit",
   "author": "Brandon Richey <brichey@teladoc.com>",
   "license": "ISC",
   "devDependencies": {

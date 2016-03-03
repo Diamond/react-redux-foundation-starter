@@ -19,7 +19,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders: ["style?includePaths[]=./node_modules/foundation-apps/scss/", "css?includePaths[]=./node_modules/foundation-apps/scss/", "sass?includePaths[]=./node_modules/foundation-apps/scss/"]
+        loaders: ["style", "css", "sass?includePaths[]=./node_modules/foundation-apps/scss/"]
       }
     ]
   }

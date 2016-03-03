@@ -19688,14 +19688,14 @@
 	var content = __webpack_require__(160);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(162)(content, {"includePaths":["./node_modules/foundation-apps/scss/"]});
+	var update = __webpack_require__(162)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js?includePaths[]=./node_modules/foundation-apps/scss!./../node_modules/sass-loader/index.js?includePaths[]=./node_modules/foundation-apps/scss!./app.scss", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js?includePaths[]=./node_modules/foundation-apps/scss!./../node_modules/sass-loader/index.js?includePaths[]=./node_modules/foundation-apps/scss!./app.scss");
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js?includePaths[]=./node_modules/foundation-apps/scss!./app.scss", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/sass-loader/index.js?includePaths[]=./node_modules/foundation-apps/scss!./app.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
