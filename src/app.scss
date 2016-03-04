@@ -1,4 +1,7 @@
 @import "settings";
+// Include Foundation 6's SASS Components
 @import "foundation";
-
 @include foundation-everything;
+// Include Foundation 6's Motion UI Animations
+@import "motion-ui";
+@include motion-ui-transitions;
